@@ -37,19 +37,19 @@ SELECT * FROM `exams` WHERE `date` = "2020-06-20" AND `hour` > "14";
 
 ```sql
 -- Selezionare tutti i corsi di laurea magistrale--
-
+SELECT * FROM `degrees` WHERE `level`='magistrale';
 ```
 
 ## QUERY 7
 
 ```sql
 -- Da quanti dipartimenti è composta l'università? (12))--
-
+SELECT COUNT(*) FROM `departments`;
 ```
 
 ## QUERY 8
 
 ```sql
 --  Quanti sono gli insegnanti che non hanno un numero di telefono? (50)--
-
+SELECT COUNT(`name`) AS 'Numero di insegnanti senza numero di telefono' FROM `teachers` WHERE `phone` IS NULL;
 ```
